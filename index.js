@@ -6,7 +6,7 @@ function time(format) {
   f = f.repAll("y", new Date().getFullYear())
   f = f.repAll("M", new Date().getMonth()+1)
   f = f.repAll("d", new Date().getDate())
-  f = f.repAll("h", new Date().getHours()-12)
+  f = f.repAll("h", new Date().getHours())
   f = f.repAll("m", new Date().getMinutes())
   f = f.repAll("s", new Date().getSeconds())
   f = f.repAll("S", new Date().getMilliseconds())
