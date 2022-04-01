@@ -10,11 +10,11 @@ Abbreviations (capitals matter):
   * s (lowercase) for second
   * S (capital) for millisecond
 
-For example, to get the date using the standard American system (month/day/year), you would type:
-  `time("M/d/y")`
- And to get the standard time (hour:minute), 
-  `time("h:m")`
+For example, to get the date using the standard American system (month/day/year), you would type: </br>
+  `time("M/d/y")`</br>
+ And to get the standard time (hour:minute),</br>
+  `time("h:m")`</br></br>
   
-  Note: t instead of time also works (e.g. `t("h:m")`)
+  Note: t instead of time also works (e.g. `t("h:m")`)</br>
   
   Also works in browsers
