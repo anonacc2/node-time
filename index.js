@@ -9,6 +9,6 @@ function time(format) {
   f = f.repAll("h", new Date().getHours()-12)
   f = f.repAll("m", new Date().getMinutes())
   f = f.repAll("s", new Date().getSeconds())
-  f = f.repAll("ms", new Date().getMilliSeconds())
+  f = f.repAll("ms", new Date().getMilliseconds())
   return f
 }
