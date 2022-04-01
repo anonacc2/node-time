@@ -12,9 +12,9 @@ Abbreviations (capitals matter):
 
 For example, to get the date using the standard American system (month/day/year), you would type:
   `time("M/d/y")`
- And to get the standard time (minute:second), 
-  `time("m:s")`
+ And to get the standard time (hour:minute), 
+  `time("h:m")`
   
-  Note: t instead of time also works (e.g. `t("m:s")`)
+  Note: t instead of time also works (e.g. `t("h:m")`)
   
   Also works in browsers
