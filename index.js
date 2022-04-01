@@ -12,3 +12,6 @@ function time(format) {
   f = f.repAll("S", new Date().getMilliseconds())
   return f
 }
+
+let t = time;
+
