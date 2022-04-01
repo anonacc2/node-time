@@ -11,9 +11,9 @@ Abbreviations (capitals matter):
   * S (capital) for millisecond
 
 For example, to get the date using the standard American system (month/day/year), you would type: </br>
-  emsp`time("M/d/y")`</br>
+  &emsp;`time("M/d/y")`</br>
  And to get the standard time (hour:minute),</br>
-  emsp`time("h:m")`</br></br>
+  &emsp;`time("h:m")`</br></br>
   
   Note: t instead of time also works (e.g. `t("h:m")`)</br>
   
