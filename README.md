@@ -16,3 +16,5 @@ For example, to get the date using the standard American system (month/day/year)
   `time("m:s")`
   
   Note: t instead of time also works (e.g. `t("m:s")`)
+  
+  Also works in browsers
