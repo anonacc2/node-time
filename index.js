@@ -55,5 +55,9 @@ function time(format) {
   
   return f
 }
+function timeHalf() {
+  return t("b");
+}
 
+amPm = timeHalf;
 let t = time;
