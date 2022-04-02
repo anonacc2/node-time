@@ -13,9 +13,10 @@ function microPerMillisecond() {
   return 0.001/0.000001
 }
 
-ppm = picoPerMillisecond()
-npm = nanoPerMillisecond()
-mpm = microPerMillisecond()
+ppm = picoPerMillisecond
+npm = nanoPerMillisecond
+mpm = microPerMillisecond
+
 function time(format) {
   let f = format;
   f = f.repAll("y", new Date().getFullYear())
@@ -30,7 +31,7 @@ function time(format) {
   f = f.repAll("s", new Date().getSeconds())
   f = f.repAll("S", new Date().getMilliseconds())
   f = f.repAll("p", new Date().getMilliseconds()*ppm())
-  f = f.repAll("u", new Date().getMilliseconds()*npm())
+  f = f.repAll("n", new Date().getMilliseconds()*npm())
   f = f.repAll("u", new Date().getMilliseconds()*mpm())
   
   return f
