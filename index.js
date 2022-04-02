@@ -30,9 +30,9 @@ function time(format) {
   f = f.repAll("m", new Date().getMinutes())
   f = f.repAll("s", new Date().getSeconds())
   f = f.repAll("S", new Date().getMilliseconds())
-  f = f.repAll("p", new Date().getMilliseconds()*ppm())
-  f = f.repAll("n", new Date().getMilliseconds()*npm())
-  f = f.repAll("u", new Date().getMilliseconds()*mpm())
+  f = f.repAll("p", Math.floor(new Date().getMilliseconds()*ppm()))
+  f = f.repAll("n", Math.floor(new Date().getMilliseconds()*npm()))
+  f = f.repAll("u", Math.floor(new Date().getMilliseconds()*mpm()))
   
   return f
 }
