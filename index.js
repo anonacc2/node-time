@@ -24,8 +24,10 @@ function time(format) {
   f = f.repAll("d", new Date().getDate())
   if (new Date().getHours() > 12) {
     f = f.repAll("h", new Date().getHours()-12)
-  } else {
+  } else if (new Date().getHours() < 12 && new Date().getHours() !== 0) {
     f = f.repAll("h", new Date().getHours())
+   } else if (new Date().getHours() === 0) {
+     f = f.repAll("h", "12")
    }
   if (String(new Date().getMinutes()).length === 1) {
     f = f.repAll("m", "0" + new Date().getMinutes())
