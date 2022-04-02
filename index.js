@@ -27,7 +27,7 @@ function time(format) {
   } else {
     f = f.repAll("h", new Date().getHours())
    }
-  if (new Date().getMinutes().length === 1) {
+  if (String(new Date().getMinutes().length === 1)) {
     f = f.repAll("m", "0" + new Date().getMinutes())
   } else {
     f = f.repAll("m", new Date().getMinutes())
