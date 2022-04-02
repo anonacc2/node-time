@@ -42,9 +42,9 @@ function time(format) {
   f = f.repAll("n", Math.floor(new Date().getMilliseconds()*npm()))
   f = f.repAll("u", Math.floor(new Date().getMilliseconds()*mpm()))
   if (new Date().getHours() < 13) {
-    f = f.repAll("h", "AM")
+    f = f.repAll("b", "AM")
   } else if (new Date().getHours() > 11) {
-    f = f.repAll("h", "PM")
+    f = f.repAll("b", "PM")
   }
   
   
