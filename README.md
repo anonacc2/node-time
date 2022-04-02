@@ -18,7 +18,7 @@ For example, to get the date using the standard American system (month/day/year)
  And to get the standard time (hour:minute),</br>
   &emsp;`time("h:m")`</br></br>
   
-  Note: t instead of time also works (e.g. `t("h:m")`)</br>
-  Also note: units shorter than 1 millisecond (microsecond,nanosecond,picosecond) are timed based on amount of said units since last second, rather then amount of said units since preceding unit. (e.g. timed using amount of picoseconds since last second, rather then amount of picoseconds since last nanosecond). 
+  Note: t instead of time also works (e.g. `t("h:m")`)</br></br>
+  Also note: units shorter than 1 millisecond (microsecond,nanosecond,picosecond) are timed based on amount of said units since last second, rather then amount of said units since preceding unit. (e.g. timed using amount of picoseconds since last second, rather then amount of picoseconds since last nanosecond).</br></br>
   
   Also works in browsers
