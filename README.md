@@ -8,7 +8,10 @@ Abbreviations (capitals matter):
   * h for hour
   * m (lowercase) for minute
   * s (lowercase) for second
-  * S (capital) for millisecond
+  * S (capital) for millisecond (1/1000th of a second)
+  * a for microsecond (1/1,000,000th of a second) 
+  * n for nanosecond (1/1,000,000,000th of a second) 
+  * p for picosecond (1/1,000,000,000,000th of a second)
 
 For example, to get the date using the standard American system (month/day/year), you would type: </br>
   &emsp;`time("M/d/y")`</br>
