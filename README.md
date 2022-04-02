@@ -12,6 +12,7 @@ Abbreviations (capitals matter):
   * a for microsecond (1/1,000,000th of a second) 
   * u for nanosecond (1/1,000,000,000th of a second) 
   * p for picosecond (1/1,000,000,000,000th of a second)
+  * b for binary (AM/PM)
 
 For example, to get the date using the standard American system (month/day/year), you would type: </br>
   &emsp;`time("M/d/y")`</br>
