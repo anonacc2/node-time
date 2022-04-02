@@ -27,7 +27,12 @@ function time(format) {
   } else {
     f = f.repAll("h", new Date().getHours())
    }
-  f = f.repAll("m", new Date().getMinutes())
+  if (new Date().getMinutes().length === 1) {
+    f = f.repAll("m", "0" + new Date().getMinutes())
+  } else {
+    f = f.repAll("m", new Date().getMinutes())
+  }
+  
   f = f.repAll("s", new Date().getSeconds())
   f = f.repAll("S", new Date().getMilliseconds())
   f = f.repAll("p", Math.floor(new Date().getMilliseconds()*ppm()))
