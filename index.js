@@ -27,13 +27,16 @@ function time(format) {
   } else {
     f = f.repAll("h", new Date().getHours())
    }
-  if (String(new Date().getMinutes().length === 1)) {
+  if (String(new Date().getMinutes()).length === 1) {
     f = f.repAll("m", "0" + new Date().getMinutes())
   } else {
     f = f.repAll("m", new Date().getMinutes())
   }
-  
-  f = f.repAll("s", new Date().getSeconds())
+  if (String(new Date().getSeconds()).length === 1) {
+    f = f.repAll("s", "0" + new Date().getSeconds())
+  } else {
+    f = f.repAll("s", new Date().getSeconds())
+  }
   f = f.repAll("S", new Date().getMilliseconds())
   f = f.repAll("p", Math.floor(new Date().getMilliseconds()*ppm()))
   f = f.repAll("n", Math.floor(new Date().getMilliseconds()*npm()))
